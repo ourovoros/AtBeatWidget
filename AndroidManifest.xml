@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="us.deusexmachina.atbeatwidget"
+      android:versionCode="2" android:versionName="1.1">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+    
+        <receiver android:name=".AtBeatWidgetSmallProvider" android:label="AtBeatWidget Small">
+    		<intent-filter>
+    			<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+    		</intent-filter>
+    			<meta-data android:name="android.appwidget.provider" android:resource="@xml/atbeat_widget_small" />
+    	</receiver>
+    	
+    	<receiver android:name=".AtBeatWidgetLargeProvider" android:label="AtBeatWidget Large">
+    		<intent-filter>
+    			<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+    		</intent-filter>
+    			<meta-data android:name="android.appwidget.provider" android:resource="@xml/atbeat_widget_large" />
+    	</receiver>
+    	
+		<service android:enabled="true" android:name=".AtBeatWidgetSmallProvider$AtBeatService" />
+		<service android:enabled="true" android:name=".AtBeatWidgetLargeProvider$AtBeatService" />
+		
+		<activity android:label="Settings" android:enabled="true" android:name=".Settings"></activity>
+    </application>
+    <uses-sdk android:minSdkVersion="4" />
+
+</manifest> 

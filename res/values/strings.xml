@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World!</string>
+    <string name="app_name">AtBeatWidget</string>
+    <string name="DlgRgbRed">Red</string>
+    <string name="DlgRgbGreen">Green</string>
+    <string name="DlgRgbBlue">Blue</string>
+    <string name="PreferenceSettings">Preference Settings</string>
+    <string name="ChangeColor">Change Color</string>
+</resources>

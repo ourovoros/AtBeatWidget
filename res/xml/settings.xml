@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceCategory
+ android:selectable="true" 
+ android:enabled="true" 
+ android:title="@string/PreferenceSettings">
+    <us.deusexmachina.atbeatwidget.RgbDialogPreference
+     android:selectable="true" 
+     android:enabled="true" 
+     android:title="@string/ChangeColor" 
+     android:key="color">
+    </us.deusexmachina.atbeatwidget.RgbDialogPreference>
+</PreferenceCategory>
+</PreferenceScreen>
